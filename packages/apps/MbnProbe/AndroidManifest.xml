@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mbnprobe"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL" />
+
+    <application 
+        android:label="MbnProbe"
+        android:usesCleartextTraffic="true">
+        
+        <uses-library
+            android:name="com.qualcomm.qcrilhook"
+            android:required="true" />
+            
+        <activity
+            android:name=".MbnProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

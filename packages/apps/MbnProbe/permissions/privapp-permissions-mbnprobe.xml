@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.example.mbnprobe">
+        <permission name="com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL"/>
+    </privapp-permissions>
+</permissions>

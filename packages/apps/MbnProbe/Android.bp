@@ -1,0 +1,23 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+
+java_library {
+    name: "qcrilhook-api-stubs",
+    srcs: ["stubs/**/*.java"],
+    platform_apis: true,
+    installable: false,
+}
+
+android_app {
+    name: "MbnProbe",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    enforce_uses_libs: false,
+    libs: [
+        "qcrilhook-api-stubs",
+    ],
+    certificate: "platform",
+}
