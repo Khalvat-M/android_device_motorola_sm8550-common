@@ -181,6 +181,13 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
 $(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 
+# MbnProbe Diagnostic Tool
+PRODUCT_PACKAGES += \
+     MbnProbe
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/packages/apps/MbnProbe/permissions/privapp-permissions-mbnprobe.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-mbnprobe.xml
+ 
 # Media
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
