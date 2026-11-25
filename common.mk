@@ -216,6 +216,7 @@ PRODUCT_PACKAGES += \
     LineageApertureAppCommon \
     LineageSdkCommon \
     LineageSettingsCommon \
+    MotoExtTelephonyResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
